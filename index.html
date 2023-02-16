@@ -5,207 +5,299 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
 </head>
 <body>
-    <div class="grid-container m-6">
-        <header class="header p-3 bg-white sticky container siteWith">
-                <div class="logo">
-                    <a href="#">
-                        <img src="./img/logo.svg" alt="">
-                    </a>                
-                </div>
-                <div class="nav">
-                    <ul>
-                        <li><a href="#">Categorias</a>
-                            <ul>
-                                <li><a href="./pages/Category01.html">| Categoria 01</a></li>
-                                <li><a href="./pages/Category02.html">| Categoria 02</a></li>
-                                <li><a href="./pages/Category03.html">| Categoria 03</a></li>
-                                <li><a href="./pages/Category04.html">| Categoria 04</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="pages/Promotions.html">Promociones</a></li>
-                        <li><a href="pages/Talles.html">Talles</a></li>
-                        <li><a href="pages/Contact.html">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="search">
-                    <form action="" role="search">
-                        <input type="search" class="#" placeholder="search...">
-                    </form>
+<header class="container-fluid bg-body-tertiary fixed-top p-3 shadow">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <div class="col-4">
+                <a href="">
+                    <img src="./img/logo.svg" alt="">
+                </a>                
             </div>
-        </header>
-    </div>
-        <!------------------------------------>
-        <section class="slider">
-        </section>
-        <!------------------------------------>
-    <div class="grid-container m-6 siteWith" >
-        <div class="bannerCat01_Home">
-            <div class="category01--home pic01">
-                <div class="br-card">
-                    <h4 class="m-6">category 01</h4>
-                    <button>button</button> 
-                </div>       
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Categorias
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Categoria 01</a></li>
+                            <li><a class="dropdown-item" href="#">Categoria 02</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Todos los Articulos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Talles</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
         </div>
-        <section class="category01_Home">
-            <div class="category01--thumbs">
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="category"> Illustration </div>
-                    <div class="heading"> A heading that must span over two lines
-                        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="category"> Illustration </div>
-                    <div class="heading"> A heading that must span over two lines
-                        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="category"> Illustration </div>
-                    <div class="heading"> A heading that must span over two lines
-                        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="category"> Illustration </div>
-                    <div class="heading"> A heading that must span over two lines
-                        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="category"> Illustration </div>
-                    <div class="heading"> A heading that must span over two lines
-                        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="category"> Illustration </div>
-                    <div class="heading"> A heading that must span over two lines
-                        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    </nav>    
+</header>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-        <!------------------------------------>
-        <section class="fullwidthCategories">
-            <div class="fullwidthCard">
-                <img src="https://cdn.shopify.com/s/files/1/1671/3937/files/lb08.jpg?v=1613677281" alt="">
-            </div>
-            <div class="fullwidthCard">
-                <img src="https://cdn.shopify.com/s/files/1/1671/3937/files/lb05.jpg?v=1613677281" alt="">
-            </div>
-            <div class="fullwidthCard">
-                <img src="https://cdn.shopify.com/s/files/1/1671/3937/files/lb09.jpg?v=1613677281" alt="">
-            </div>
-        </section>
-        <!------------------------------------>
-    <div class="grid-container m-6 siteWith">
-        <section class="category02_Home">
-            <div class="category02--thumbs">
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="category"> Illustration </div>
-                    <div class="heading"> A heading that must span over two lines
-                        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="category"> Illustration </div>
-                    <div class="heading"> A heading that must span over two lines
-                        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="category"> Illustration </div>
-                    <div class="heading"> A heading that must span over two lines
-                        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="category"> Illustration </div>
-                    <div class="heading"> A heading that must span over two lines
-                        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="category"> Illustration </div>
-                    <div class="heading"> A heading that must span over two lines
-                        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="category"> Illustration </div>
-                    <div class="heading"> A heading that must span over two lines
-                        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="bannerCat02_Home">
-            <div class="category02--home pic02">
-                <div class="br-card">
-                    <h4 class="m-6">category 01</h4>
-                    <button>button</button> 
-                </div>       
-            </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/Carousel/01.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
         </div>
-        
     </div>
-        <!------------------------------------>
-    <section class="contactBar bg-dark p-6">
-        <div class="container p-4 siteWith">
-            <div class="thumbInfo rightBorder">
+    <div class="carousel-item">
+        <img src="img/Carousel/02.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <img src="img/Carousel/03.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+        </div>
+    </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+    </button>
+</div>    
+<section class="container-xxl mt-5">
+    <div class="row">
+        <aside class="col-3 pic01">
+            <div class="category01--home br-card">
+                    <h4>category 01</h4>
+                    <button>button</button> 
+            </div>       
+        </aside>
+        <section class="col-9">
+            <div class="d-flex flex-wrap justify-content-around">
+                <div class="card mb-3">
+                    <div class="card-image">
+                        <img src="img/remeras/Shirt01.png" alt="...">
+                    </div>
+                    <div class="category"> Illustration </div>
+                    <div class="heading"> A heading that must span over two lines
+                        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-image">
+                        <img src="img/remeras/Shirt02.png" alt="...">
+                    </div>
+                    <div class="category"> Illustration </div>
+                    <div class="heading"> A heading that must span over two lines
+                        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-image">
+                        <img src="img/remeras/Shirt03.png" alt="...">
+                    </div>
+                    <div class="category"> Illustration </div>
+                    <div class="heading"> A heading that must span over two lines
+                        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-image">
+                        <img src="img/remeras/Shirt04.png" alt="...">
+                    </div>
+                    <div class="category"> Illustration </div>
+                    <div class="heading"> A heading that must span over two lines
+                        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-image">
+                        <img src="img/remeras/Shirt05.png" alt="...">
+                    </div>
+                    <div class="category"> Illustration </div>
+                    <div class="heading"> A heading that must span over two lines
+                        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-image">
+                        <img src="img/remeras/Shirt06.png" alt="...">
+                    </div>
+                    <div class="category"> Illustration </div>
+                    <div class="heading"> A heading that must span over two lines
+                        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                    </div>
+                </div>
+            </div>                
+        </section>        
+    </div>
+</section>
+<section class="container-fluid mt-5">
+    <div class="row">
+        <div class="col-4 p-0">
+            <img src="https://cdn.shopify.com/s/files/1/1671/3937/files/lb08.jpg?v=1613677281" alt="" style="width: -webkit-fill-available">
+        </div>
+        <div class="col-4 p-0">
+            <img src="https://cdn.shopify.com/s/files/1/1671/3937/files/lb05.jpg?v=1613677281" alt="" style="width: -webkit-fill-available">
+        </div>
+        <div class="col-4 p-0">
+            <img src="https://cdn.shopify.com/s/files/1/1671/3937/files/lb09.jpg?v=1613677281" alt="" style="width: -webkit-fill-available">
+        </div>
+    </div>
+</section>
+<section class="container-xxl mt-5">
+    <div class="row">
+        <section class="col-9 px-5">
+            <div class="d-flex flex-wrap justify-content-around">
+                <div class="card mb-3">
+                    <div class="card-image">
+                        <img src="img/remeras/Shirt07.png" alt="...">
+                    </div>
+                    <div class="category"> Illustration </div>
+                    <div class="heading"> A heading that must span over two lines
+                        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-image">
+                        <img src="img/remeras/Shirt08.png" alt="...">
+                    </div>
+                    <div class="category"> Illustration </div>
+                    <div class="heading"> A heading that must span over two lines
+                        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-image">
+                        <img src="img/remeras/Shirt09.png" alt="...">
+                    </div>
+                    <div class="category"> Illustration </div>
+                    <div class="heading"> A heading that must span over two lines
+                        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-image">
+                        <img src="img/remeras/Shirt10.png" alt="...">
+                    </div>
+                    <div class="category"> Illustration </div>
+                    <div class="heading"> A heading that must span over two lines
+                        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-image">
+                        <img src="img/remeras/Shirt11.png" alt="...">
+                    </div>
+                    <div class="category"> Illustration </div>
+                    <div class="heading"> A heading that must span over two lines
+                        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-image">
+                        <img src="img/remeras/Shirt12.png" alt="...">
+                    </div>
+                    <div class="category"> Illustration </div>
+                    <div class="heading"> A heading that must span over two lines
+                        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                    </div>
+                </div>
+            </div>                
+        </section>  
+        <aside class="col-3 pic02">
+            <div class="category02--home br-card">
+                    <h4>category 02</h4>
+                    <button>button</button> 
+            </div>       
+        </aside>      
+    </div>
+</section>
+<section class="container-fluid bg-body-tertiary mt-5 p-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-4 thumbInfo rightBorder">
                 <img src="./img/delivery.png" alt="">
-                    <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h4>
+                <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h4>
             </div>
-            <div class="thumbInfo rightBorder">
+            <div class="col-4 thumbInfo rightBorder">
                 <img src="./img/mail.png" alt="">
-                    <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h4>
+                <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h4>
             </div>
-            <div class="thumbInfo">
+            <div class="col-4 thumbInfo">
                 <img src="./img/credit-card.png" alt="">
-                    <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h4>
+                <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h4>
             </div>
         </div>
-    </section>            
-        <!------------------------------------>
-    <div class="grid-container m-6 siteWith">
-        <section class="feed p-6">
-            <h2>Sumate al Feed</h2>
-                <p>subscribite al feed y gana descuentos y sé el primero en saber sobre nuestras promociones</p>
-                <div class="form">
-                    <form action="">
-                        <input type="email" class="input" placeholder="Email Adress">
-                        <input type="text" class="input" placeholder="Name">
-                        <input type="tel" name="" id="" class="input" placeholder="Phone Number">
-                        <input type="button" value="sign up" class="input-button bg_button_cyan">
-                    </form>
-                </div>
-                <p class="p-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
-                    Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.
-                    Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
-        </section>
     </div>
-        <!------------------------------------>
-    <footer class="footer bg-dark p-6">
-        Footer
-    </footer>
+</section>
+<section class="container d-flex flex-column my-5">
+    <div class="d-flex flex-column align-items-center">
+        <div><h2>Sumate al Feed</h2></div>
+        <div>subscribite al feed y gana descuentos y sé el primero en saber sobre nuestras promociones</div>
+    </div>
+    <div class="row my-5">
+        <div class="form-floating col-3">
+            <input type="email" class="form-control" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating col-3">
+            <input type="text" class="form-control" placeholder="Name">
+            <label for="floatingInput">Name</label>
+        </div>
+        <div class="form-floating col-3">
+            <input type="tel" class="form-control" placeholder="Tel">
+            <label for="floatingInput">Phone Number</label>
+        </div>
+        <div class="col-3 d-grid gap-2">
+            <button class="btn btn-primary btn-lg" type="button">Sign Up</button>
+        </div>
+    </div>
+    <div class="d-flex align-items-center">
+        <div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</div>
+    </div>
+</section>
+<div class="container-fluid bg-primary mt-5 p-3">
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <img src="./img/logo_white.svg" alt="">
+            </a>
+            <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><img src="img/facebook_white.png" alt=""></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><img src="img/instagram_white.png" alt=""></a></li>
+        </ul>
+        </footer>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

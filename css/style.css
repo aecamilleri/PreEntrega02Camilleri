@@ -148,3 +148,10 @@
 .rightBorder{
     border-right: solid 1px #212529;
 }
+
+
+@media only screen and (max-width: 576px) {
+    .card {
+        width: 50% !important;
+    }
+  }

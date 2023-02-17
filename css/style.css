@@ -116,7 +116,6 @@
 
 
 .thumbInfo {
-    width: 30%;
     padding-left: 30px;
     text-align: center;
     left: 0;
@@ -149,9 +148,27 @@
     border-right: solid 1px #212529;
 }
 
+.form-floating>label{
+    padding: 1rem 1.75rem!important;
+}
 
 @media only screen and (max-width: 576px) {
     .card {
         width: 50% !important;
+    }
+    .thumbInfo h4 {
+    margin-bottom: 5em;
+    }
+    .rightBorder {
+    border-right: none;
+    }
+    .thumbInfo img {
+    width: 25%;
+    }
+    .center_mobile{
+    text-align: center; 
+    }
+    .navbar-nav-scroll {
+    max-height: 35vh;
     }
   }

@@ -157,6 +157,11 @@
 .price .btn{
 border-radius: 50%!important;
 }
+.nav-pills .nav-link {
+    border: 1px solid !important;
+    margin: 0 10px!important;
+    min-width: 50px!important;
+}
 @media only screen and (max-width: 576px) {
     .card {
         width: 50% !important;
@@ -175,5 +180,9 @@ border-radius: 50%!important;
     }
     .navbar-nav-scroll {
     max-height: 35vh;
+    }
+    .nav-pills .nav-link {
+        margin: 0 1px!important;
+        min-width: 50px!important;
     }
   }
